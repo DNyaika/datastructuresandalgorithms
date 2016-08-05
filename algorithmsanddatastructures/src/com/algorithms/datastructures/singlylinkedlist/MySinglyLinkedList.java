@@ -269,4 +269,26 @@ public class MySinglyLinkedList<E> implements List {
 		return null;
 	}
 
+	@Override
+	public boolean equals(Object o) {
+		if (o instanceof List) {
+			List otherList = (List) o;
+			if (this.size() == otherList.size()) {
+				Iterator list1 = this.iterator();
+				Iterator list2 = otherList.iterator();
+
+				while (list1.hasNext()) {
+					Object e1 = list1.next();
+					Object e2 = list2.next();
+
+					if (!(e1 == null ? e2 == null : e1.equals(e2))) {
+						return false;
+					}
+				}
+				return true;
+			}
+		}
+		return false;
+	}
+
 }

@@ -106,7 +106,11 @@ public class MySinglyLinkedList<E> implements List {
 
 	@Override
 	public boolean contains(Object o) {
-		// TODO Auto-generated method stub
+		for (Object e : this) {
+			if (o == null ? e == null : o.equals(e)) {
+				return true;
+			}
+		}
 		return false;
 	}
 

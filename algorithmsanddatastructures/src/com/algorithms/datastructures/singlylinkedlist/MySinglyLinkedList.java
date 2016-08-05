@@ -4,6 +4,7 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
+import java.util.NoSuchElementException;
 
 @SuppressWarnings("rawtypes")
 public class MySinglyLinkedList<E> implements List {
@@ -44,6 +45,55 @@ public class MySinglyLinkedList<E> implements List {
 
 	}
 
+	class LinkedListIterator implements Iterator<E> {
+
+		private Node<E> current;
+		private Node<E> previous;
+		private Node<E> previous2;
+
+		private boolean removeCalled;
+
+		public LinkedListIterator() {
+			current = head;
+			previous = null;
+			previous2 = null;
+			removeCalled = false;
+		}
+
+		@Override
+		public boolean hasNext() {
+			return current != null;
+		}
+
+		@Override
+		public E next() {
+			if (current == null) {
+				throw new NoSuchElementException();
+			}
+			E temp = current.getData();
+			previous2 = previous;
+			previous = current;
+			current = current.getNext();
+			removeCalled = false;
+			return temp;
+		}
+
+		public void remove() {
+			if (previous == null || removeCalled) {
+				throw new IllegalStateException();
+			}
+			if (previous2 == null) {
+				head = current;
+			} else {
+				previous2.setNext(current);
+				previous = previous2;
+			}
+			currentSize--;
+			removeCalled = true;
+		}
+
+	}
+
 	@Override
 	public int size() {
 		return currentSize;
@@ -62,8 +112,7 @@ public class MySinglyLinkedList<E> implements List {
 
 	@Override
 	public Iterator iterator() {
-		// TODO Auto-generated method stub
-		return null;
+		return new LinkedListIterator();
 	}
 
 	@Override

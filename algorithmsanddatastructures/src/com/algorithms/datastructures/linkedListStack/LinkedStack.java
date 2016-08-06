@@ -96,7 +96,7 @@ public class LinkedStack<E> implements Iterable<E> {
 			s.append(data + " ");
 		return s.toString();
 	}
-
+	
 	/**
 	 * Returns an iterator to this stack that iterates through the items in LIFO
 	 * order.
@@ -104,6 +104,7 @@ public class LinkedStack<E> implements Iterable<E> {
 	 * @return an iterator to this stack that iterates through the items in LIFO
 	 *         order.
 	 */
+	
 	public Iterator<E> iterator() {
 		return new ListIterator();
 	}

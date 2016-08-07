@@ -1,4 +1,4 @@
-package com.algorithms.datastructures.linkedlistqueue;
+package com.algorithms.datastructures.queue.linkedlistqueue;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;

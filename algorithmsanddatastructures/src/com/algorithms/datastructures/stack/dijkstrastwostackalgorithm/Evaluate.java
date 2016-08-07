@@ -1,4 +1,4 @@
-package com.algorithms.datastructures.dijkstrastwostackalgorithm;
+package com.algorithms.datastructures.stack.dijkstrastwostackalgorithm;
 
 import java.util.Stack;
 

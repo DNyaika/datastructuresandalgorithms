@@ -1,4 +1,4 @@
-package com.algorithms.datastructures.resizingarraystack;
+package com.algorithms.datastructures.stack.resizingarraystack;
 
 public class Main {
 

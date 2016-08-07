@@ -1,4 +1,4 @@
-package com.algorithms.datastructures.doublylinkedlist;
+package com.algorithms.datastructures.linkedlist.doublylinkedlist;
 
 //testing remove from end
 public class Main3 {

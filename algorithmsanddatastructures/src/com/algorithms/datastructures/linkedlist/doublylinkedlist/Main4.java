@@ -1,4 +1,4 @@
-package com.algorithms.datastructures.doublylinkedlist;
+package com.algorithms.datastructures.linkedlist.doublylinkedlist;
 
 public class Main4 {
 	public static void main(String[] args) {

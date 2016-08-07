@@ -1,4 +1,4 @@
-package com.algorithms.datastructures.singlylinkedlist;
+package com.algorithms.datastructures.linkedlist.singlylinkedlist;
 
 //testing equals method
 public class Main3 {

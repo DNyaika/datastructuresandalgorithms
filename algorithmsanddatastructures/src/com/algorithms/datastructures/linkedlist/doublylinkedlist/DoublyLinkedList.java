@@ -1,4 +1,4 @@
-package com.algorithms.datastructures.doublylinkedlist;
+package com.algorithms.datastructures.linkedlist.doublylinkedlist;
 
 import java.util.NoSuchElementException;
 

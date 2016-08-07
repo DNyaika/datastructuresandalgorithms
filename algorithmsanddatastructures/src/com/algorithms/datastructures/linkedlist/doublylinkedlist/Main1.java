@@ -1,4 +1,4 @@
-package com.algorithms.datastructures.doublylinkedlist;
+package com.algorithms.datastructures.linkedlist.doublylinkedlist;
 
 //testing Add to end of the link
 public class Main1 {

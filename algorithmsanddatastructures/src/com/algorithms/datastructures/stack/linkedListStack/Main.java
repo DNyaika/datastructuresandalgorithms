@@ -1,4 +1,4 @@
-package com.algorithms.datastructures.linkedListStack;
+package com.algorithms.datastructures.stack.linkedListStack;
 
 public class Main {
 

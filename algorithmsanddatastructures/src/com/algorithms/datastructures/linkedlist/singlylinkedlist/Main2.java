@@ -1,4 +1,4 @@
-package com.algorithms.datastructures.singlylinkedlist;
+package com.algorithms.datastructures.linkedlist.singlylinkedlist;
 
 import java.util.Iterator;
 //tests iterator

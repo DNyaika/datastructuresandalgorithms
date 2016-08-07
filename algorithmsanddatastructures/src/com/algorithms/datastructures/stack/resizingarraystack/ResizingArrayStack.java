@@ -1,4 +1,4 @@
-package com.algorithms.datastructures.resizingarraystack;
+package com.algorithms.datastructures.stack.resizingarraystack;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
